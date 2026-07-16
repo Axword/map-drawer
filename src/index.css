@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-typewriter: "Special Elite", cursive;
+  --font-mono: "Courier Prime", monospace;
+
+  --color-archive-dark: #0b0c10;
+  --color-archive-paper: #f4ecd8;
+  --color-archive-paper-aged: #e2d5bc;
+  --color-archive-ink: #1a1714;
+  --color-archive-red: #7a1c1c;
+  --color-archive-brass: #b89742;
+  --color-archive-border: #3d352a;
+}
+
+body {
+  background-color: #0b0c10;
+  color: #d1c7b7;
+  font-family: "Courier Prime", monospace;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Vintage Paper Dossier Box */
+.dossier-box {
+  background-color: #f4ecd8;
+  color: #1a1714;
+  border: 3px double #3d352a;
+  box-shadow: 4px 6px 20px rgba(0,0,0,0.8), inset 0 0 40px rgba(184,151,66,0.15);
+  position: relative;
+}
+
+/* Red Classified Stamp */
+.stamp-classified {
+  transform: rotate(-3deg);
+  border: 3px solid #7a1c1c;
+  color: #7a1c1c;
+  font-family: "Special Elite", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 0.25rem 0.75rem;
+  display: inline-block;
+  background: rgba(122, 28, 28, 0.05);
+  box-shadow: inset 0 0 10px rgba(122,28,28,0.1);
+}
+
+/* Typewriter Input */
+.typewriter-input {
+  background-color: #e9dec4;
+  border: 1px solid #5c4d3c;
+  color: #1a1714;
+  font-family: "Courier Prime", monospace;
+}
+.typewriter-input:focus {
+  outline: none;
+  border-color: #7a1c1c;
+  box-shadow: 0 0 5px rgba(122,28,28,0.3);
+}
+
+/* Custom Archive Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0c10;
+}
+::-webkit-scrollbar-thumb {
+  background: #5c4d3c;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b89742;
+}
